@@ -1,7 +1,7 @@
 
 #include <iostream>
 
-
+//https://www.youtube.com/watch?v=wJ1L2nSIV1s
 struct addr_entity {
     int x;
 };
