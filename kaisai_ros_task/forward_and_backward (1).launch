@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<arg name="lineaX" default="0.5" />
+        <arg name="angularZ" default="0.1" />
+        <arg name="cmd_vel_topic" default="/vmegarover/diff_drive_controller/cmd_vel" />
+
+
+        <node name="forward_and_backward" pkg="robo_simulation" type="forward_and_backward"  output="screen">
+                <param name="whill_lineaX" value="$(arg lineaX)"/>
+                <param name="whill_angularZ" value="$(arg angularZ)"/>
+                <param name="pub_cmd_vel_topic" value="$(arg cmd_vel_topic)"/>
+        </node>
+
+</launch>
