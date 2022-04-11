@@ -42,6 +42,7 @@ void broken_keyboard::input()
         print();
       /*  arr_ptr = test.begin();*/
     }
+    
 }
 
 
