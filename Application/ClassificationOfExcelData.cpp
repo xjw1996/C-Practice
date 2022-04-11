@@ -221,8 +221,6 @@ void Dataset_classification::readfile() {
 }
 
 
-
-
 int main()
 {
     Dataset_classification Data_cla;
