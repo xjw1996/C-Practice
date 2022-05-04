@@ -40,6 +40,15 @@ int main()
     }
     std::cout << TF << std::endl;
 
+
+    for (int i = 0;i < v.size();i++) {
+        if (v[i] == 8) {
+            break;
+        }
+        else {
+            std::cout << v[i] << std::endl;
+        }
+    }
     // 
     // 
     //v.erase(v.begin() + 2);
