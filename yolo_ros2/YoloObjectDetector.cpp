@@ -177,6 +177,8 @@ void YoloObjectDetector::init()
 
   it_ = std::make_shared<image_transport::ImageTransport>(shared_from_this());
   
+    
+  //订阅图像 
   using std::placeholders::_1;
   imageSubscriber_ = it_->subscribe(cameraTopicName, cameraQueueSize,
     std::bind(&YoloObjectDetector::cameraCallback, this, _1));
